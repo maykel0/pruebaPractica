@@ -1,0 +1,21 @@
+{
+  "name": "mini-whatsapp",
+  "version": "1.0.0",
+  "description": "Mini WhatsApp - proyecto academico con arquitectura Hexagonal, DDD y SOLID",
+  "main": "src/infrastructure/http/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/infrastructure/http/server.js",
+    "dev": "nodemon src/infrastructure/http/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "whatsapp-web.js": "^1.26.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini WhatsApp</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="setup">
+      <h1>Mini WhatsApp</h1>
+      <label>Mi numero</label>
+      <input id="me" placeholder="+50688881111" />
+      <label>Numero del companero</label>
+      <input id="contact" placeholder="+50688882222" />
+      <button id="loadChat">Abrir chat</button>
+
+      <div id="qrBox" class="qr-box hidden">
+        <p>Escaneá este QR con WhatsApp:</p>
+        <img id="qrImage" alt="QR de WhatsApp" />
+      </div>
+    </aside>
+
+    <main class="chat">
+      <div id="messages" class="messages"></div>
+      <form id="sendForm" class="send-form">
+        <input id="text" placeholder="Escribe un mensaje..." autocomplete="off" />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
